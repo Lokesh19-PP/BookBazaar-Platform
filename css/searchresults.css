@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #D6CFC4; /* Beige header */
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.platform-name {
+    margin-left: 5px; /* Space between logo and name */
+    font-size: 30px;
+    font-family: 'Kristen ITC', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-right: 10px;
+}
+
+.nav-links a i {
+    font-size: 25px;
+}
+
+.nav-links a:hover {
+    color: gray; /* Change color on hover */
+}
+
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.search-results {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.book-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.book-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: black;
+}
+
+.book-item-link {
+    text-decoration: none; /* Ensures links have no underline */
+}
+
+.book-item p {
+    margin: 5px 0;
+    color: black;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}

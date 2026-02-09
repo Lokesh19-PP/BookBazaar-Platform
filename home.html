@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Bazaar</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="assets/logo1.jpg" alt="Book Bazaar Logo">
+                </div>
+                <h1 class="platform-name">Book Bazaar</h1>
+            </div>
+            <div class="nav-links">
+                <a href="home.html"><i class="fa-solid fa-house-chimney"></i></a>
+                <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="php/userprofile.php"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <form id="search-form" action="php/search_results.php" method="GET">
+            <input type="text" name="query" id="search-input" placeholder="Search for book names, authors or genres..." required>
+            <button type="submit" class="search-button">Search</button>
+        </form>
+        <button class="map-button" id="map-button">Map</button>
+    </div>
+
+    <div class="broad-image-container">
+        <img src="assets/home_broad_image.jpg" alt="Promotional Banner" class="broad-image">
+    </div>
+
+    <main>
+        <div class="container">
+            <section class="categories">
+                <h1 class="section-title">Genres</h1>
+                <div class="category-wrapper">
+                    <button class="scroll-button left" onclick="scrollCategories(-1)">&#10094;</button>
+                    <div class="category-layout">
+                        <div class="category-item category-Fiction">
+                            <a href="php/genre_results.php?genre=Fiction">
+                                <img src="assets/fiction.jpg" alt="Fiction">
+                                <p>Fiction</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Non Fiction">
+                            <a href="php/genre_results.php?genre=Non Fiction">
+                                <img src="assets/non-fiction.jpg" alt="Non Fiction">
+                                <p>Non Fiction</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Self Help">
+                            <a href="php/genre_results.php?genre=Self Help">
+                                <img src="assets/selfhelp.jpg" alt="Self Help">
+                                <p>Self Help</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Biography">
+                            <a href="php/genre_results.php?genre=Biography">
+                                <img src="assets/biography.jpg" alt="Biography">
+                                <p>Biography</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Romantic">
+                            <a href="php/genre_results.php?genre=Romantic">
+                                <img src="assets/romantic.jpg" alt="Romantic">
+                                <p>Romantic</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Science">
+                            <a href="php/genre_results.php?genre=Science">
+                                <img src="assets/science.jpg" alt="Science">
+                                <p>Science</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-History">
+                            <a href="php/genre_results.php?genre=History">
+                                <img src="assets/history.jpg" alt="History">
+                                <p>History</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Fantasy">
+                            <a href="php/genre_results.php?genre=Fantasy">
+                                <img src="assets/fantacy.jpg" alt="Fantasy">
+                                <p>Fantasy</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Educational">
+                            <a href="php/genre_results.php?genre=Educational">
+                                <img src="assets/educational.jpg" alt="Educational">
+                                <p>Educational</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Literature">
+                            <a href="php/genre_results.php?genre=Literature">
+                                <img src="assets/literature.jpg" alt="Literature">
+                                <p>Literature</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Novel">
+                            <a href="php/genre_results.php?genre=Novel">
+                                <img src="assets/novel.jpg" alt="Novel">
+                                <p>Novel</p>
+                            </a>
+                        </div>
+                        <div class="category-item category-Other">
+                            <a href="php/genre_results.php?genre=Other">
+                                <img src="assets/other.jpg" alt="Other">
+                                <p>Other</p>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="scroll-button right" onclick="scrollCategories(1)">&#10095;</button>
+                </div>
+            </section>
+            <section class="why-book-bazaar">
+                <h1 class="section-title">Why Book Bazaar?</h1>
+                <div class="key-points">
+                    <div class="key-point">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <h3>WIDE SELECTION OF BOOKS</h3>
+                        <p>Book Bazaar offers an extensive collection of books across various genres, ensuring that readers can find titles that cater to their interests, whether it's fiction, non-fiction, academic, or self-help.</p>
+                    </div>
+                    <div class="key-point">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <h3>AFFORDABLE PRICING</h3>
+                        <p>The platform often features discounted prices, making books accessible to a broader audience. Special sales and promotions allow readers to purchase more books without straining their budgets.</p>
+                    </div>
+                    <div class="key-point">
+                        <i class="fa-solid fa-user-group"></i>
+                        <h3>USER-FRIENDLY EXPERIENCE</h3>
+                        <p>The website is designed for easy navigation, allowing users to search for specific titles or browse categories effortlessly. Detailed book descriptions and user reviews enhance the shopping experience.</p>
+                    </div>
+                    <div class="key-point">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h3>CONVENIENT ONLINE SHOPPING</h3>
+                        <p>Customers can shop from the comfort of their homes and have books delivered directly to their doorstep. This convenience saves time and effort, especially for busy individuals.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <head>
+            <link rel="stylesheet" href="css/footer.css">
+        </head>
+        <div class="footer-container">
+            <!-- Logo and Tagline -->
+            <div class="footer-logo">
+                <img src="assets/logo1.jpg" alt="Website Logo">
+                <p><b>Book Bazaar : Read More, Spend Less</b></p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="ourmission.html">Our Mission</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: support@bookbazaar.com</p>
+                <p>Phone: +91 876-7043-855</p>
+                <p>Address: Government Polytechnic Nashik, Chehdi(B), Samangaon Road, Nashik-Road, Nashik- 422 101</p>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-legal">
+                <p>© 2024 [BOOK BAZAAR]. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollCategories(direction) {
+            const categoryLayout = document.querySelector('.category-layout');
+            const scrollAmount = 220 + 10; // Item width + margin
+            categoryLayout.scrollBy({
+                left: scrollAmount * direction,
+                behavior: 'smooth'
+            });
+        }
+
+        document.getElementById('map-button').addEventListener('click', function() {
+            const searchInput = document.getElementById('search-input').value;
+            if (searchInput.trim() !== '') {
+                window.location.href = 'php/map_view.php?query=' + encodeURIComponent(searchInput);
+            }
+        });
+    </script>
+</body>
+
+</html>
